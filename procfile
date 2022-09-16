@@ -1,2 +1,1 @@
-worker python categoria.py
 web: gunicorn app:app

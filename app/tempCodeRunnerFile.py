@@ -1,1 +1,1 @@
-python_modules/bin/activate
+if __name__ == '__main__':

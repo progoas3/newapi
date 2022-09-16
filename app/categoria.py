@@ -87,7 +87,6 @@ def insert_seguimiento():
     observaciones = data['observaciones']
     pendientes = data['pendientes']
     hallazgo = data['hallazgo']
-    
     nuevo_registro = seguimiento(accion,numero_accion,proceso,correctiva,mejora,fecha_definicion,fecha_cierre_propuesta,fecha_cierre_real,eficaz,nueva_accion_al_no_ser_eficaz,observaciones,pendientes,hallazgo)
     
     db.session.add(nuevo_registro)
