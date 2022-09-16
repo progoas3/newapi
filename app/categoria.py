@@ -134,7 +134,7 @@ def update_seguimiento(numero_accion):
 
 
 #Mensaje de bienvenida
-@app.route('/', methods=['GET'])
+@app.route('/a', methods=['GET'])
 def index():
     return "<h1>Hola<h1>"
 
