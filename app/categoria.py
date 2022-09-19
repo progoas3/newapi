@@ -12,6 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:admin@35.184.165.166:3306/
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
+
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
