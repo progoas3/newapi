@@ -17,6 +17,5 @@ six==1.16.0
 SQLAlchemy==1.4.39
 Werkzeug==2.2.1
 mysql-connector-python
-mysql-python
 mysqlclient
 

@@ -2,10 +2,12 @@ from xmlrpc.client import Marshaller
 from flask import Flask,jsonify,request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
+from waitress import serve
 
 #. python_modules/bin/activate
 #python app/categoria.py
-
+def create_app(): 
+    return app
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:admin@35.184.165.166:3306/principal'
@@ -139,4 +141,4 @@ def index():
     return "<h1>Hola<h1>"
 
 if __name__ == '__main__':
-    app.run(port=5000,debug=True)
+    app.run(host='0.0.0.0',port=5000)
