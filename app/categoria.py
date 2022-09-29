@@ -2,7 +2,7 @@ from xmlrpc.client import Marshaller
 from flask import Flask,jsonify,request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-import os
+
 
 #. python_modules/bin/activate
 #python app/categoria.py
@@ -10,7 +10,7 @@ def create_app():
     return app
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:admin@35.184.165.166:3306/principal'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:1234@104.197.163.85:3306/principal'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
@@ -141,4 +141,4 @@ def index():
     return "<h1>Hola<h1>"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port = int(os.environ.get('PORT', 5000)))
+    app.run(host='0.0.0.0',port=8080)
